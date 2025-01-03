@@ -1,0 +1,109 @@
+.homepage_team_parent {
+  padding-bottom: 2rem;
+}
+
+.homepage_team_parent .fixed_width {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.homepage_team_parent .top_half {
+  display: flex;
+}
+
+
+.homepage_team_parent .top_half .left { 
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.homepage_team_parent .top_half .left h2 {
+  width: min(51rem, 100%);
+}
+
+.homepage_team_parent .top_half .left .container {
+  width: fit-content;
+  display: flex;
+  margin-left: 19rem;
+  position: relative;
+}
+
+.homepage_team_parent .job_roles_animation {
+  height: 6.4rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: clamp(4.16rem, 2.32vi + 3.23rem, 6.2rem);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.homepage_team_parent .job_roles_animation .text_container {
+  border-radius: 5rem;
+  width: fit-content;
+  padding: 0.242rem 2.5rem .8rem 2.5rem;
+  background-color: rgba(229, 151, 39, .13);
+}
+
+.homepage_team_parent .job_roles_animation p {
+  line-height: 1.2;
+  font-size: clamp(2.6rem, 1.93vw + 1.83rem, 4.3rem);
+  font-weight: 600;
+  color: var(--orange);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.homepage_team_parent .top_half .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 11rem;
+  
+}
+
+.homepage_team_parent .top_half .right .container {
+  display: flex;
+  flex-direction: column;
+  width: min(40rem, 90%);
+  gap: clamp(2rem, 2.05vw + 1.18rem, 3.8rem);;
+}
+
+/* 1000px */
+@media screen and (max-width: 62.5em) {
+  .homepage_team_parent .top_half {
+    flex-direction: column;
+  }
+  .homepage_team_parent .top_half .left {
+    width: auto;
+    gap: 1.3rem;
+  }
+  .homepage_team_parent .swiper-slide {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  .homepage_team_parent .top_half .right {
+    padding-top: 6rem;
+    width: auto;
+    justify-content: flex-start;
+  }
+  .homepage_team_parent .top_half .left .container_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .homepage_team_parent .top_half .left .container {
+    margin-left: unset;
+  }
+}
+
+/* 600px */
+@media screen and (max-width: 37.5em) {
+  .homepage_team_parent .top_half .left .container_parent {
+    justify-content: flex-end;
+  }
+}

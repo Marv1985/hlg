@@ -1,0 +1,31 @@
+.image_or_video_full_height.full_screen .thumbnail video,
+.image_or_video_full_height.full_screen .thumbnail img {
+    width: 100%;
+    max-height: unset;
+    border-radius: 0;
+}
+
+  .image_or_video_full_height.full_screen .fixed_width,
+  .image_or_video_full_height.full_screen {
+    overflow: visible;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .image_or_video_full_height.full_screen .thumbnail img,
+  .image_or_video_full_height.full_screen .thumbnail video {
+    aspect-ratio: unset;
+    max-height: unset;
+  }
+  
+  .image_or_video_full_height .thumbnail video,
+  .image_or_video_full_height .thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.8rem;
+  }
+
+  .image_or_video_full_height .fixed_width .thumbnail {
+    margin-bottom: clamp(3rem, 3.17vi + 0.94rem, 5rem);
+  }
+  

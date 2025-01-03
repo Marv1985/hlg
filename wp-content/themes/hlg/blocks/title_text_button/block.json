@@ -1,0 +1,16 @@
+{
+  "name": "acf/titletextbutton",
+  "title": "Title Text Button",
+  "description": "Title, text and button.",
+  "style": ["file:./title_text_button.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["title", "text", "button"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "title_text_button.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

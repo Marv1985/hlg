@@ -1,0 +1,17 @@
+{
+  "name": "acf/homepageourservices",
+  "title": "Homepage Our Services",
+  "description": "List of out services.",
+  "style": ["file:./homepage_our_services.css"],
+  "script": "file:./homepage_our_services.js",
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["homepage", "our", "services"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "homepage_our_services.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

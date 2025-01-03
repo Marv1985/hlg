@@ -1,0 +1,16 @@
+{
+  "name": "acf/titleandwysiwyg",
+  "title": "Title and Wysiwyg",
+  "description": "Title and Wysiwyg content area.",
+  "style": ["file:./title_and_wysiwyg.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["title", "wysiwyg"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "title_and_wysiwyg.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

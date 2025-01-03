@@ -1,0 +1,16 @@
+{
+  "name": "acf/imageorvideofullheight",
+  "title": "Image Or Video Full Height",
+  "description": "Image or video.",
+  "style": ["file:./image_or_video_full_height.css"],
+  "category": "media",
+  "icon": "admin-comments",
+  "keywords": ["image", "video"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "image_or_video_full_height.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

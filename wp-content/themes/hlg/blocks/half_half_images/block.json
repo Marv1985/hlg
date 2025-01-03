@@ -1,0 +1,16 @@
+{
+  "name": "acf/halfhalfimages",
+  "title": "Half Half Images",
+  "description": "Half Half Images",
+  "style": ["file:./half_half_images.css"],
+  "category": "accordion",
+  "icon": "admin-comments",
+  "keywords": ["title", "accordion"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "half_half_images.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

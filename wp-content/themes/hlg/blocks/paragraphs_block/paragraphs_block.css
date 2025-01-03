@@ -1,0 +1,17 @@
+.paragraphs_block_parent {
+    padding-bottom: clamp(5rem, 3.41vi + 3.64rem, 8rem);
+    gap: clamp(5rem, 42.86vi + -29.29rem, 35rem);
+    font-size: clamp(1.6rem, 1.02vi + 1.19rem, 2.5rem);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphs_block_parent .container {
+    width: min(80rem, 100%);
+    margin: auto;
+}
+
+.paragraphs_block_parent .navigation_button_template {
+    margin-top: clamp(2.5rem, 0.57vi + 2.27rem, 3rem);
+}

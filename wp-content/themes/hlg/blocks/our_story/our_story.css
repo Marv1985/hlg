@@ -1,0 +1,85 @@
+.our_story_parent {
+    padding-top: clamp(1rem, 4.55vi + -0.82rem, 5rem);
+    padding-bottom: clamp(7rem, 5.68vi + 4.73rem, 12rem);
+    position: relative;
+}
+
+.our_story_parent .our_story_intersection {
+    position: fixed;
+    height: .2rem;
+    width: 100%;
+    background-color: black;
+    top: 50%;
+}
+
+.our_story_parent strong {
+    color: var(--font_grey);
+}
+
+.our_story_parent .navigation_button_template {
+    float: right;
+}
+
+.our_story_parent .navigation_button_template .animation_slide {
+    background-color: var(--orange);
+}
+
+.our_story_parent .fixed_width {
+    display: flex;
+    justify-content: center;
+}
+
+.our_story_parent .fixed_width .our_story_container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(3rem, 2.27vi + 2.09rem, 5rem);
+    width: min(120rem, 100%);
+}
+
+.our_story_parent .about_section .about_info_container {
+    display: flex;
+    color: rgba(22, 38, 53, .2);
+    gap: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+    transition: color .3s ease;
+}
+
+.our_story_parent .about_section .about_info_container.is_active{
+    color: var(--font_blue);
+    transition: color .3s ease;
+}
+
+.our_story_parent .about_section .about_info_container:nth-of-type(1) {
+    padding-bottom: clamp(5rem, 9.66vi + 1.14rem, 13.5rem);
+}
+
+.our_story_parent .about_section .about_info_container:last-of-type {
+    padding-top: clamp(5rem, 9.66vi + 1.14rem, 13.5rem);
+}
+
+.our_story_parent .about_info_container .left_side,
+.our_story_parent .about_info_container .right_side {
+    width: calc(50% - 1.5rem);
+}
+
+.our_story_parent .about_info_container .right_side p {
+    font-size: clamp(1.6rem, 1.02vi + 1.19rem, 2.5rem);
+    font-weight: 300;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .our_story_parent .navigation_button_template:hover{
+        border-color: var(--orange);
+    }
+  }
+
+  /* 700px */
+  @media screen and (max-width: 43.75em) {
+    .our_story_parent .about_section .about_info_container {
+        flex-direction: column;
+    }
+
+    .our_story_parent .about_info_container .left_side, .our_story_parent .about_info_container .right_side {
+        width: auto;
+    }
+  }
+ 

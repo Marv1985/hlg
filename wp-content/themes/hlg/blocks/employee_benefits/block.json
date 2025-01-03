@@ -1,0 +1,16 @@
+{
+  "name": "acf/employeebenefits",
+  "title": "Employee Benefits",
+  "description": "Hlg perks.",
+  "style": ["file:./employee_benefits.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["employee", "benefits"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "employee_benefits.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

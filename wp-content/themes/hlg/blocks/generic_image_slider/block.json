@@ -1,0 +1,17 @@
+{
+  "name": "acf/genericimageslider",
+  "title": "Generic Image Slider",
+  "description": "Image swiper.",
+  "style": ["file:./generic_image_slider.css"],
+  "script": "file:./generic_image_slider.js",
+  "category": "swiper",
+  "icon": "admin-comments",
+  "keywords": ["generic", "image", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "generic_image_slider.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

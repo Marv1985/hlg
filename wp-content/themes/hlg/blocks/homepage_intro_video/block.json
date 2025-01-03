@@ -1,0 +1,17 @@
+{
+  "name": "acf/homepageintro",
+  "title": "Homepage Intro Video",
+  "description": "Introduction video.",
+  "style": ["file:./homepage_intro_video.css"],
+  "script": "file:./homepage_intro_video.js",
+  "category": "media",
+  "icon": "admin-comments",
+  "keywords": ["homepage", "intro", "video"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "homepage_intro_video.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

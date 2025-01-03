@@ -1,0 +1,17 @@
+{
+  "name": "acf/textslidesanimation",
+  "title": "Text Slides Animation",
+  "description": "Text Slides Animation.",
+  "style": ["file:./text_slides_animation.css"],
+  "script": "file:./text_slides_animation.js",
+  "category": "animation",
+  "icon": "admin-comments",
+  "keywords": ["text", "slides", "animation"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "text_slides_animation.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

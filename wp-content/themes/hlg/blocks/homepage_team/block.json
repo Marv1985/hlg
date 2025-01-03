@@ -1,0 +1,17 @@
+{
+  "name": "acf/homepageteam",
+  "title": "Homepage Team",
+  "description": "A little bit about the team.",
+  "style": ["file:./homepage_team.css"],
+  "script": "file:./homepage_team.js",
+  "category": "about",
+  "icon": "admin-comments",
+  "keywords": ["homepage", "team"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "homepage_team.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

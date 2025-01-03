@@ -1,0 +1,49 @@
+.employee_benefits_parent {
+    padding: clamp(5rem, 5.68vi + 2.73rem, 10rem) 0;
+}
+
+.employee_benefits_parent .fixed_width {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4rem, 5.68vi + 1.73rem, 9rem);
+    align-items: center;
+}
+
+.employee_benefits_parent .title:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+
+.employee_benefits_parent .benefits_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: clamp(3rem, 7.95vi + -0.18rem, 10rem);
+    width: min(120rem, 100%);
+}
+
+.employee_benefits_parent .benefits_container .benefit {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee_benefits_parent .benefits_container .benefit .number {
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem);
+    color: var(--font_grey);
+    font-weight: 600;
+}
+
+.employee_benefits_parent .benefits_container .benefit h3 {
+    margin: clamp(0.5rem, 0.57vi + 0.27rem, 1rem) 0 clamp(1.3rem, 0.8vi + 0.98rem, 2rem) 0;
+}
+
+.employee_benefits_parent .benefits_container .benefit .paragraph {
+    color: var(--font_grey);
+}
+
+/* 800px */
+@media screen and (max-width: 50em) {
+    .employee_benefits_parent .benefits_container {
+        grid-template-columns: repeat(auto-fit, minmax(22rem, auto));
+    }
+  }

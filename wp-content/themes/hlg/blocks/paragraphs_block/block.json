@@ -1,0 +1,16 @@
+{
+  "name": "acf/paragraphsblock",
+  "title": "Paragraphs Block",
+  "description": "50% 50% paragraphs block",
+  "style": ["file:./paragraphs_block.css"],
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": ["paragraphs"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "paragraphs_block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

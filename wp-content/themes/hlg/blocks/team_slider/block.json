@@ -1,0 +1,17 @@
+{
+  "name": "acf/teamslider",
+  "title": "Team Slider",
+  "description": "Team slider.",
+  "style": ["file:./team_slider.css"],
+  "script": "file:./team_slider.js",
+  "category": "swiper",
+  "icon": "admin-comments",
+  "keywords": ["team", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "team_slider.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

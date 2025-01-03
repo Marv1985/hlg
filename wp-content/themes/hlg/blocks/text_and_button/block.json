@@ -1,0 +1,16 @@
+{
+  "name": "acf/textandbutton",
+  "title": "Text and Button",
+  "description": "Small text area and button.",
+  "style": ["file:./text_and_button.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["text", "button"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "text_and_button.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

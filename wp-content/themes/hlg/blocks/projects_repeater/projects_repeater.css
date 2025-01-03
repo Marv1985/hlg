@@ -1,0 +1,229 @@
+.projects_repeater_parent .fixed_width {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  overflow: visible;
+  column-gap: clamp(3rem, 8.93vi + -5.93rem, 5.5rem);
+  grid-auto-flow: dense;
+}
+
+.projects_repeater_parent.full_width {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: clamp(6rem, 2.27vi + 5.09rem, 8rem);
+}
+
+.projects_repeater_parent.border_radius {
+  border-bottom-left-radius: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+  border-bottom-right-radius: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+}
+
+.projects_repeater_parent.full_width .pagination {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.7rem, 0.34vi + 0.56rem, 1rem);
+}
+
+.projects_repeater_parent.full_width .pagination .page-numbers {
+  font-size: clamp(1.6rem, 0.45vi + 1.42rem, 2rem);
+  font-weight: 900;
+  border-radius: 50%;
+  height: clamp(3.5rem, 0.57vi + 3.27rem, 4rem);
+  aspect-ratio: 1/1;
+  background-color: var(--navbar_grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_repeater_parent.full_width .pagination .page-numbers.current {
+  color: white;
+  background-color: var(--font_blue);
+}
+
+.projects_repeater_parent .project_container.show_onload {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.projects_repeater_parent .project_container {
+  opacity: 0;
+  transform: translateY(8%);
+}
+
+.projects_repeater_parent .project_container.is_active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: transform .2s ease, opacity .5s ease;
+}
+
+.projects_repeater_parent .project_container.translateY {
+  opacity: 0;
+  transform: translateY(8%);
+  transition: all .3s ease;
+}
+
+.projects_repeater_parent .project_container a {
+  position: relative;
+  width: 100%;
+  cursor: none;
+}
+
+.projects_repeater_parent .project_container .overflow_control {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: clamp(1.8rem, 1.93vi + 1.03rem, 3.5rem);
+  max-height: 95vh;
+  transition: border-radius .3s ease;
+}
+
+.projects_repeater_parent.padding_top_left .project_container:nth-child(odd) {
+  padding-top: clamp(5rem, 10.71vi + -5.71rem, 8rem);
+}
+
+.projects_repeater_parent.padding_top_right .project_container:nth-child(even) {
+  padding-top: clamp(5rem, 10.71vi + -5.71rem, 8rem);
+}
+
+.projects_repeater_parent .project_container img,
+.projects_repeater_parent .project_container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: scale 0.5s ease;
+}
+
+.projects_repeater_parent .project_container a {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.7vi + 0.32rem, 2.5rem);
+}
+
+.projects_repeater_parent .project_container .cursor {
+  pointer-events: none;
+  visibility: hidden;
+  scale: 0.1;
+  opacity: 0;
+  cursor: none;
+  position: absolute;
+  height: 12rem;
+  width: 12rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: scale 0.1s ease, opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+
+.projects_repeater_parent .project_container .cursor svg {
+  width: 66%;
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.projects_repeater_parent .project_container .category_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.projects_repeater_parent .project_container .category_container p {
+  text-transform: uppercase;
+  border-radius: 5rem;
+  color: var(--orange);
+  background-color: rgba(229, 151, 39, 0.13);
+  padding: .1rem 1.1rem;
+  font-size: clamp(1.4rem, 0.45vi + 1.22rem, 1.8rem);
+  letter-spacing: 0.15rem;
+}
+
+.projects_repeater_parent .project_container a:focus img,
+.projects_repeater_parent .project_container a:focus video {
+    scale: 1.1;
+    transition: scale 0.5s ease;
+  }
+
+  .projects_repeater_parent .project_container a:focus .category_container {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.projects_repeater_parent .project_container a .cursor.hover {
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  transition: scale 0.3s ease-out, opacity 0.3s ease, visibility 0s;
+}
+.projects_repeater_parent .project_container a .cursor.hover svg {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+}
+
+/*------------------------------------*\
+    HOVER
+\*------------------------------------*/
+@media (hover: hover) and (pointer: fine) {
+  .projects_repeater_parent .project_container a:hover img,
+  .projects_repeater_parent .project_container a:hover video {
+    scale: 1.03;
+    transition: scale 0.5s ease;
+  }
+  .projects_repeater_parent .project_container a:hover .category_container {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .projects_repeater_parent .project_container a:hover .overflow_control {
+    border-radius: 9rem;
+  }
+}
+
+/*------------------------------------*\
+    MEDIA QUERIES
+\*------------------------------------*/
+/* width of 1000px */
+@media (max-width: 62.5em) {
+  .projects_repeater_parent .project_container .category_container {
+    opacity: 1;
+  }
+}
+
+/* width of 600px */
+@media (max-width: 37.5em) {
+  .projects_repeater_parent .fixed_width {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: unset;
+    gap: 3rem;
+  }
+  .projects_repeater_parent.padding_top_right .project_container:nth-of-type(even) {
+    padding-top: 0;
+  }
+  .projects_repeater_parent.padding_top_left .project_container:nth-of-type(odd) {
+    padding-top: 0;
+  }
+  .homepage_projects_title_parent .fixed_width {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .homepage_projects_title_parent .fixed_width .title {
+    margin-bottom: 3rem;
+    width: auto;
+  }
+}
+
+/*---------------------------------------------*\
+      NONE HOVER DEVICES
+\*---------------------------------------------*/
+@media (hover: none) {
+  .projects_repeater_parent .project_container .cursor {
+    display: none;
+  }
+}

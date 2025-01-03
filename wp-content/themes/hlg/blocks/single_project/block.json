@@ -1,0 +1,16 @@
+{
+  "name": "acf/singleproject",
+  "title": "Single Project",
+  "description": "Single project info.",
+  "style": ["file:./single_project.css"],
+  "category": "project",
+  "icon": "admin-comments",
+  "keywords": ["single", "project"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single_project.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,117 @@
+.team_member_at_a_glance_parent {
+    margin-bottom: clamp(4rem, 2.27vi + 3.09rem, 6rem);
+}
+
+.team_member_at_a_glance_parent .fixed_width {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--light_grey);
+    border-radius: 1.8rem;
+    padding: clamp(1.2rem, 1.05vi + 0.25rem, 1.6rem);
+    padding-top: 2.5rem;
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container strong {
+    color: var(--font_grey);
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; 
+    grid-template-rows: auto auto; 
+    grid-gap: clamp(1.2rem, 1.05vi + 0.25rem, 1.6rem);
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text {
+    background-color: white;
+    padding: 1.6rem clamp(1.8rem, 2.5vi + -0.2rem, 3rem) clamp(1.8rem, 1.04vi + 0.97rem, 2.3rem) clamp(1.8rem, 2.5vi + -0.2rem, 3rem);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+    position: relative;
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text a:hover + p:nth-of-type(1) {
+    color: var(--orange);
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(4), .team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(5)  {
+    grid-row: 2; /* Place these items in the second row */
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .text:nth-of-type(4) {
+    grid-column: 1 / span 2;
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(3),
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(5) {
+    grid-column: 3 / span 2; 
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text p:nth-of-type(1) {
+    font-size: clamp(2.5rem, 5.21vi + -1.67rem, 5rem);
+    line-height: 1.2;
+    transition: color .3s ease;
+}
+
+.team_member_at_a_glance_parent .at_a_glance_container .grid .text p:nth-of-type(2) {
+    color: var(--font_grey);
+    line-height: 1;
+}
+
+/* 800px */
+@media screen and (max-width: 50em) {
+    .team_member_at_a_glance_parent .at_a_glance_container .grid {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(3) {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    .team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(4) {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    .team_member_at_a_glance_parent .at_a_glance_container .grid .text:nth-of-type(5) {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+}
+
+/* 440px */
+@media screen and (max-width: 27.5em) {
+    .team_member_at_a_glance_parent .at_a_glance_container {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .team_member_at_a_glance_parent .at_a_glance_container .grid .text p:nth-of-type(2) {
+        font-size: 1.4rem;
+    }
+
+    .team_member_at_a_glance_parent .at_a_glance_container .grid .text {
+        padding: 1rem;
+        border-radius: .8rem;
+}
+}

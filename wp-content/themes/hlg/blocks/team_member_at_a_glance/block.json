@@ -1,0 +1,16 @@
+{
+  "name": "acf/teammemberataglance",
+  "title": "Team Member At A Glance",
+  "description": "Descriptive member info text area.",
+  "style": ["file:./team_member_at_a_glance.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["team", "member", "glance"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "team_member_at_a_glance.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

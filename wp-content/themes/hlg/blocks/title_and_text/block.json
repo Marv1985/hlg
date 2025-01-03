@@ -1,0 +1,16 @@
+{
+  "name": "acf/titleandtext",
+  "title": "Title And Text",
+  "description": "Title and text area.",
+  "style": ["file:./title_and_text.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["title", "text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "title_and_text.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

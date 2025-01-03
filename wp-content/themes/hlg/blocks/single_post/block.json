@@ -1,0 +1,16 @@
+{
+  "name": "acf/singlepost",
+  "title": "Single Post",
+  "description": "Blog post.",
+  "style": ["file:./single_post.css"],
+  "category": "Blog post",
+  "icon": "admin-comments",
+  "keywords": ["single", "post"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single_post.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

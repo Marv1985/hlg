@@ -1,0 +1,107 @@
+.swiper_with_hover_cursor {
+    margin-bottom: clamp(3rem, 3.17vi + 0.94rem, 5rem);
+}
+
+.swiper_with_hover_cursor.full_width,
+.swiper_with_hover_cursor .fixed_width,
+.swiper_with_hover_cursor .swiper {
+    overflow: visible;
+}
+
+.swiper_with_hover_cursor .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem);
+}
+
+.swiper_with_hover_cursor .swiper-slide {
+    max-height: 75dvh;
+    width: fit-content;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-next::after,
+.swiper_with_hover_cursor .swiper .swiper-button-prev::after {
+    content: '';
+}
+
+.swiper_with_hover_cursor .swiper .cursor {
+    pointer-events: none;
+    visibility: hidden;
+    scale: .1;
+    opacity: 0;
+    cursor: none;
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: visibility 0s ease .3s, scale 0.1s ease, opacity .3s ease;
+}
+
+.swiper_with_hover_cursor .swiper .cursor span {
+    font-weight: 500;
+    font-size: 5.5rem;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-next .swiper_right_cursor span {
+    opacity: 0;
+    transform: translateX(-150%);
+    scale: .1;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-prev .swiper_left_cursor span {
+    opacity: 0;
+    transform: translateX(150%);
+    scale: .1;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-next,
+.swiper_with_hover_cursor .swiper .swiper-button-prev {
+    width: 50%;
+    height: 100%;
+    top: 2.2rem;
+    cursor: none;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-prev .swiper_left_cursor.hover {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transition: scale .3s ease-out, opacity .3s ease, visibility 0s;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-next .swiper_right_cursor.hover {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transition: scale .3s ease-out, opacity .3s ease, visibility 0s;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-prev .swiper_left_cursor.hover span {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .5s ease;
+}
+
+.swiper_with_hover_cursor .swiper .swiper-button-next .swiper_right_cursor.hover span {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .5s ease;
+}
+
+
+
+@media (hover: none) {
+    .swiper_with_hover_cursor .swiper .swiper-button-next,
+    .swiper_with_hover_cursor .swiper .swiper-button-prev {
+        display: none;
+    }
+}

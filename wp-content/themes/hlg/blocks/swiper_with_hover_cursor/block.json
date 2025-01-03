@@ -1,0 +1,17 @@
+{
+  "name": "acf/swiperwithhovercursor",
+  "title": "Swiper With Hover Cursor",
+  "description": "Swiper with hover cursor.",
+  "style": ["file:./swiper_with_hover_cursor.css"],
+  "script": "file:./swiper_with_hover_cursor.js",
+  "category": "swiper",
+  "icon": "admin-comments",
+  "keywords": ["swiper", "hover", "cursor"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "swiper_with_hover_cursor.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "acf/reviewsslider",
+  "title": "Reviews Slider",
+  "description": "Reviews swiper.",
+  "style": ["file:./reviews_slider.css"],
+  "script": "file:./reviews_slider.js",
+  "category": "swiper",
+  "icon": "admin-comments",
+  "keywords": ["reviews", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "reviews_slider.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

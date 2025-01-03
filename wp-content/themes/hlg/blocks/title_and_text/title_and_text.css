@@ -1,0 +1,36 @@
+.title_and_text {
+  padding-top: clamp(5rem, 2.27vi + 4.09rem, 7rem);
+  padding-bottom: 4rem;
+}
+
+.title_and_text .fixed_width {
+  display: flex;
+  gap: clamp(2.5rem, 0.57vi + 2.27rem, 3rem);
+  align-items: flex-end;
+}
+
+.title_and_text .title,
+.title_and_text .text {
+  width: calc(50% - 1.5rem);
+}
+
+.title_and_text .text p {
+  width: min(43rem, 100%);
+  float: right ;
+}
+
+/* 980px */
+@media screen and (max-width: 61.25em) {
+  .title_and_text .fixed_width {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .title_and_text .title, .title_and_text .text {
+    width: auto;
+  }
+
+  .title_and_text .text p {
+    float: left;
+  }
+}

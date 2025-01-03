@@ -1,0 +1,17 @@
+{
+  "name": "acf/projectsrepeater",
+  "title": "Projects Repeater",
+  "description": "Projects from projects posts.",
+  "style": ["file:./projects_repeater.css"],
+  "script": "file:./projects_repeater.js",
+  "category": "projects",
+  "icon": "admin-comments",
+  "keywords": ["projects", "repeater"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "projects_repeater.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

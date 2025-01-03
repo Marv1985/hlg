@@ -1,0 +1,17 @@
+{
+  "name": "acf/ourstory",
+  "title": "Our Story",
+  "description": "Titles and text about the company.",
+  "style": ["file:./our_story.css"],
+  "script": ["file:./our_story.js"],
+  "category": "about company",
+  "icon": "admin-comments",
+  "keywords": ["our", "story"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "our_story.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,37 @@
+.numbered_sections_parent {
+    padding-bottom: clamp(5rem, 5.68vi + 2.73rem, 10rem);
+}
+
+.numbered_sections_parent .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: clamp(3rem, 1.14vi + 2.55rem, 4rem);
+}
+
+.numbered_sections_parent .section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2.27vi + 0.09rem, 3rem);
+}
+
+.numbered_sections_parent .section span {
+    border-radius: 50%;
+    background-color: var(--light_grey);
+    padding: 0.5rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.numbered_sections_parent .section span p {
+    color: var(--font_blue);
+    font-weight: 600;
+    font-size: clamp(1.6rem, 0.23vi + 1.51rem, 1.8rem);
+}
+
+.numbered_sections_parent .section p {
+    color: var(--font_grey);
+}

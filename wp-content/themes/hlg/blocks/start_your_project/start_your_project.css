@@ -1,0 +1,414 @@
+.start_your_project_parent.orange {
+    background-color: var(--orange);
+    padding: clamp(5rem, 2.27vi + 4.09rem, 7rem) 0;
+    border-bottom-left-radius: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+    border-bottom-right-radius: clamp(2rem, 1.14vi + 1.55rem, 3rem);
+    min-height: 100vh;
+}
+
+.start_your_project_parent .fixed_width {
+    display: flex;
+    gap: 3rem;
+}
+
+.start_your_project_parent h1 {
+    width: min(30rem, 100%);
+}
+
+.start_your_project_parent .left_side {
+    display: flex;
+    flex: 1;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-captcha-left>div {
+    opacity: 0;
+}
+
+.start_your_project_parent .right_side {
+    display: flex;
+    flex: 1;
+}
+
+input:-webkit-autofill,
+input:-moz-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgb(231 162 68) inset !important;
+    box-shadow: 0 0 0 1000px rgb(231 162 68) inset !important;
+}
+
+/*----------------*\
+    FORM STYLES
+\*----------------*/
+/* .forminator-ui#forminator-module-1040.forminator-design--default .forminator-error-message, */
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps .forminator-step .forminator-step-label,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps .forminator-break,
+.start_your_project_parent .forminator-edit-module {
+    display: none;
+}
+
+.start_your_project_parent form {
+    position: relative;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-response-message p {
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem) !important;
+    margin-left: .8rem;
+}
+
+.start_your_project_parent form .forminator-response-message {
+    border-radius: .5rem !important;
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem) !important;
+    box-shadow: none;
+    font-weight: 600 !important;
+    position: absolute !important;
+    top: 35%;
+    z-index: 1 !important;
+    width: 100%;
+    margin: 0;
+}
+
+#forminator-module-724 .forminator-response-message.forminator-loading:before, #forminator-module-724.forminator-response-message.forminator-loading:before {
+    content: "◌";
+    position: absolute;
+    top: 1.8rem;
+    left: 2rem;
+    font-weight: 600;
+    color: var(--orange);
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem) !important;
+}
+
+.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form[data-design=default] .forminator-response-message.forminator-loading:before, .forminator-ui.forminator-custom-form[data-design=default] .forminator-response-message.forminator-loading:before {
+    content: "◌";
+    position: absolute;
+    top: 1.8rem;
+    left: 2rem;
+    font-weight: 600;
+    color: var(--orange);
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem) !important;
+}
+
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-error-message {
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-label {
+    font-size: 1.6rem;
+    color: var(--font_blue);
+    font-weight: 400;
+    margin-bottom: .3rem;
+}
+
+.forminator-pagination:focus-visible {
+    outline: none;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] {
+    margin: 0;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps,
+.forminator-ui.forminator-custom-form[data-design=default]:not(.forminator-size--small) .forminator-pagination-steps {
+    gap: 1rem;
+    margin-bottom: 1.3rem;
+    display: flex;
+    margin-left: 0.2rem;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps .forminator-step.forminator-current .forminator-step-dot {
+    border-color: white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps .forminator-step .forminator-step-dot,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps .forminator-step.forminator-current ~ .forminator-step .forminator-step-dot {
+    background-color: rgb(245 188 110);
+    border-color: rgb(245 188 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps button:nth-of-type(1) .forminator-step-dot:after {
+    content: '1';
+    color: var(--orange);
+    font-size: 1.1rem;
+    position: relative;
+    top: -0.01rem;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-pagination-steps button:nth-of-type(2) .forminator-step-dot:after {
+    content: '2';
+    color: var(--orange);
+    font-size: 1.1rem;
+    position: relative;
+    top: -0.01rem;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps .forminator-step,
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps .forminator-step .forminator-step-dot {
+    width: 1.8rem;
+    height: 1.8rem;
+    flex: 0 0 1.8rem;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-title {
+    font-size: clamp(2.2rem, 0.91vi + 1.84rem, 3rem);
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    outline: none;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea:focus,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea:active,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-input:focus,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-input:active,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-input {
+    background-color: rgb(231 162 68);
+    border-radius: .5rem;
+    border-color: rgba(255, 255, 255, 0.2);
+    padding: 1.3rem;
+    color: var(--font_blue);
+    font-size: clamp(1.8rem, 0.45vi + 1.62rem, 2.2rem);
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea {
+    resize: none;
+    height: 10rem;
+    line-height: 1.5;
+}
+
+/* scrollbar width */
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: 5rem;
+}
+
+/* scrcollbar handle */
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea::-webkit-scrollbar-thumb {
+    background: var(--font_blue); 
+    border: .3rem solid rgb(231 162 68);
+    border-radius: 5rem;
+    cursor: grab;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea:focus,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-input:focus {
+    border-color: white;
+}
+
+.forminator-pagination-footer {
+    justify-content: flex-start !important;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit:active,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next:active,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next {
+    background-color: var(--font_blue) !important;
+    color: white;
+    font-size: clamp(1.6rem, 0.23vi + 1.51rem, 1.8rem);
+    border-radius: 50rem;
+    padding: .6rem 2rem;
+    padding-right: .3rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    transition: gap .3s ease;
+    box-shadow: none;
+    width: fit-content;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-checkbox input:focus + .forminator-checkbox-box + .forminator-checkbox-label,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit:focus,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-back:focus,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next:focus {
+    outline: .1rem solid white;
+    box-shadow: none;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit::after,
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next::after {
+    position: relative;
+    top: 0.08rem;
+    right: -0.15rem;
+    font-family: 'Material Symbols Outlined';
+    content: 'arrow_circle_right';
+    font-size: 3.5rem;
+    transition: color .3s ease;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-back::before {
+    font-family: 'Material Symbols Outlined';
+    content: 'arrow_back';
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: -.2rem;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-back {
+    background-color: transparent;
+    font-size: clamp(1.6rem, 0.23vi + 1.51rem, 1.8rem);
+    color: var(--font_blue);
+    padding: .6rem 0;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    transition: gap .3s ease;
+    width: fit-content;
+    min-width: unset;
+    margin-bottom: 0;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-checkbox {
+    position: relative;
+    width: fit-content;
+    margin: 0;
+    display: inline-block;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-field {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    row-gap: .2rem;
+    position: relative;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-label {
+    width: 100%;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-checkbox {
+    display: flex;
+    padding: .2rem 0;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-checkbox .forminator-checkbox-box~span.is_active {
+   background-color: white;
+   color: var(--orange);
+   border-color: white;
+   transition: all .2s ease;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-footer {
+    display: flex !important;
+}
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-checkbox .forminator-checkbox-box {
+    display: none;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default]:not(.forminator-size--small) .forminator-pagination-footer {
+    margin: 4rem 0 0;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-checkbox .forminator-checkbox-box~span {
+    background-color: rgb(231 162 68);
+    border: .1rem solid rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 0 1rem;
+    border-radius: 5rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    transition: all .2s ease;
+    margin-left: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+} 
+
+.forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit {
+    background-color: var(--font_blue) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-textarea:hover,
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-input:hover {
+        background-color: rgb(231 162 68);
+        /* border-color: rgba(255, 255, 255, 0.2); */
+        border-color: white;
+        color: var(--font_blue);
+        transition: none;
+    }
+
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit:hover::after,
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next:hover::after {
+        color: var(--orange);
+    }
+
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit:hover,
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next:hover {
+        background-color: var(--font_blue);
+        box-shadow: none;
+        transition: none;
+        gap: 1.3rem;
+        transition: gap .3s ease;
+    }
+
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-back:hover {
+        transition: none;
+        background-color: transparent;
+        font-size: clamp(1.6rem, 0.23vi + 1.51rem, 1.8rem);
+        color: var(--font_blue);
+        padding: .6rem 0;
+        margin-right: 2rem;
+        box-shadow: none;
+    }
+
+    .forminator-ui.forminator-custom-form[data-design=default] .forminator-checkbox .forminator-checkbox-box~span:hover {
+        border-color: white;
+        transition: all .2s ease;
+    }
+}
+
+/* 800px */
+@media screen and (max-width: 50em) {
+    .start_your_project_parent h1 {
+        width: min(50rem, 100%);
+    }
+
+    .start_your_project_parent .fixed_width {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-submit:focus,
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-back:focus,
+    .forminator-ui#forminator-module-1040.forminator-design--default .forminator-button-next:focus {
+        outline: none;
+    }
+
+}
+
+/* 500px */
+@media screen and (max-width: 31.25em) {
+    .start_your_project_parent h1 {
+        width: min(30rem, 100%);
+    }
+
+    .forminator-ui.forminator-custom-form[data-design=default] .forminator-field {
+        gap: .5rem;
+        row-gap: .2rem;
+    }
+
+    .forminator-ui.forminator-custom-form[data-design=default] .forminator-checkbox .forminator-checkbox-box~span {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}

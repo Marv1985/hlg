@@ -1,0 +1,34 @@
+.generic_image_slider_parent {
+  padding-bottom: clamp(4rem, 2.27vi + 3.09rem, 6rem);
+}
+
+.generic_image_slider_parent .swiper.generic_image_slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+  align-items: center;
+}
+
+.generic_image_slider_parent .generic_image_slider .swiper-slide.portrait {
+ width: clamp(20rem, 20.45vi + 11.82rem, 38rem);
+ aspect-ratio: 1/1.3;
+}
+
+.generic_image_slider_parent .generic_image_slider .swiper-slide.landscape {
+  width: clamp(22.5rem, 25.57vi + 12.27rem, 45rem);
+  aspect-ratio: 1.3/1;
+}
+
+.generic_image_slider_parent .generic_image_slider .swiper-slide {
+  overflow: hidden;
+  border-radius: clamp(1.3rem, 0.57vi + 1.07rem, 1.8rem);
+}
+
+.generic_image_slider_parent .generic_image_slider .swiper-slide img.top {
+  object-position: top;
+}
+
+.generic_image_slider_parent .generic_image_slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

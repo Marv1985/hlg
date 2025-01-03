@@ -1,0 +1,17 @@
+{
+  "name": "acf/projectspagetopsection",
+  "title": "Projects Page Top Section",
+  "description": "Projects page title and filter section.",
+  "style": ["file:./projects_page_top_section.css"],
+  "script": "file:./projects_page_top_section.js",
+  "category": "Projects filter",
+  "icon": "admin-comments",
+  "keywords": ["projects", "page", "top", "section"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "projects_page_top_section.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

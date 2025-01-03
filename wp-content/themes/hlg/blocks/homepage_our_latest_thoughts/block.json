@@ -1,0 +1,17 @@
+{
+  "name": "acf/homepageourlatestthoughts",
+  "title": "homepage Our Latest Thoughts",
+  "description": "Blog links.",
+  "style": ["file:./homepage_our_latest_thoughts.css"],
+  "script": "file:./homepage_our_latest_thoughts.js",
+  "category": "posts",
+  "icon": "admin-comments",
+  "keywords": ["homepage", "our", "latest", "thoughts"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "homepage_our_latest_thoughts.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

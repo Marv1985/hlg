@@ -1,0 +1,34 @@
+.half_half_images_parent .fixed_width {
+    display: flex;
+    gap: clamp(3rem, 3.17vi + 0.94rem, 5rem);
+    padding-bottom: clamp(3rem, 3.17vi + 0.94rem, 5rem);
+}
+
+.half_half_images_parent .fixed_width div {
+    flex: 1;
+}
+
+.half_half_images_parent video {
+    width: 100%;
+    border-radius: 1.8rem;
+}
+
+.half_half_images_parent video.cover {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.half_half_images_parent img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.8rem;
+}
+
+
+/* 650px */
+@media screen and (max-width: 40.625em) {
+    .half_half_images_parent .fixed_width {
+        flex-direction: column;
+    }
+}

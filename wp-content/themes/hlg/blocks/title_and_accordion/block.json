@@ -1,0 +1,17 @@
+{
+  "name": "acf/titleandaccordion",
+  "title": "Title and Accordion",
+  "description": "Title and accordion.",
+  "style": ["file:./title_and_accordion.css"],
+  "script": "file:./title_and_accordion.js",
+  "category": "accordion",
+  "icon": "admin-comments",
+  "keywords": ["title", "accordion"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "title_and_accordion.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

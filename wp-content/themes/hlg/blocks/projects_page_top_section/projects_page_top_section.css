@@ -1,0 +1,102 @@
+.projects_page_top_section {
+    padding-top: clamp(5rem, 2.27vi + 4.09rem, 7rem);
+    padding-bottom: 3rem;
+}
+
+.projects_page_top_section .fixed_width {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects_page_top_section .fixed_width .filter {
+    display: flex;
+    gap: clamp(3rem, 8.93vi + -5.93rem, 5.5rem);
+}
+
+.projects_page_top_section .fixed_width .filter_container,
+.projects_page_top_section .fixed_width .paragraph {
+    width: 50%;
+}
+
+.projects_page_top_section .fixed_width .filter_container {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.projects_page_top_section .fixed_width .filter_container strong {
+    height: fit-content;
+    color: var(--font_grey);
+    font-size: 1.4rem;
+    padding-right: 1.2rem;
+    margin: auto 0;
+}
+
+.projects_page_top_section .fixed_width .filter_container button {
+    width: fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    color: var(--orange);
+    background-color: rgba(229, 151, 39, .13);
+    padding: .1rem 1.1rem;
+    font-size: clamp(1.4rem, 0.45vi + 1.22rem, 1.8rem);
+    cursor: pointer;
+    border: .1rem solid transparent;
+    letter-spacing: 0.15rem;
+}
+
+.projects_page_top_section .fixed_width .filter_container button.selected {
+    background-color: var(--orange);
+    color: #fbf2e7;
+}
+
+.projects_page_top_section .fixed_width .paragraph {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects_page_top_section .fixed_width .paragraph p {
+    width: 75%;
+}
+
+/* 900px */
+@media screen and (max-width: 56.25em) {
+    .projects_page_top_section .fixed_width .filter {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projects_page_top_section .fixed_width .paragraph {
+        justify-content: flex-start;
+    }
+
+    .projects_page_top_section .fixed_width .paragraph p {
+        width: 100%;
+    }
+
+    .projects_page_top_section .fixed_width .filter_container, .projects_page_top_section .fixed_width .paragraph {
+        width: 100%;
+    }
+}
+
+/* 500px */
+@media screen and (max-width: 31.25em) {
+    .projects_page_top_section .fixed_width .filter_container strong {
+        width: 100%;
+        margin-bottom: .4rem;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .projects_page_top_section .fixed_width .filter_container button:hover {
+        border-color: var(--orange);
+    }
+
+    .projects_page_top_section .fixed_width .filter_container button.selected:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,26 @@
+.text_and_button_parent {
+    padding-bottom: clamp(5rem, 3.41vi + 3.64rem, 8rem);
+}
+
+.text_and_button_parent .fixed_width {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.text_and_button_parent p {
+    width: 30rem;
+}
+
+.text_and_button_parent .navigation_button_template .animation_slide {
+    background-color: var(--orange);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .text_and_button_parent .navigation_button_template:hover {
+        border-color: var(--orange);
+        color: white;
+        transition: .1s linear;
+    } 
+}

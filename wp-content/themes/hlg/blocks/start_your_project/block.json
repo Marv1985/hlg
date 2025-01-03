@@ -1,0 +1,17 @@
+{
+  "name": "acf/startyourproject",
+  "title": "Start your project",
+  "description": "Start your project contact form",
+  "style": ["file:./start_your_project.css"],
+  "script": "file:./start_your_project.js",
+  "category": "design",
+  "icon": "admin-comments",
+  "keywords": ["start", "project"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "start_your_project.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

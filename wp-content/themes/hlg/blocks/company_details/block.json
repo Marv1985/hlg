@@ -1,0 +1,16 @@
+{
+  "name": "acf/companydetails",
+  "title": "Company Details",
+  "description": "Info on the company.",
+  "style": ["file:./company_details.css"],
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["company", "details"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "company_details.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

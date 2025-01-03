@@ -1,0 +1,16 @@
+{
+  "name": "acf/numberedsections",
+  "title": "Numbered Sections",
+  "description": "Numbered sections (4 across)",
+  "style": ["file:./numbered_sections.css"],
+  "category": "text sections",
+  "icon": "admin-comments",
+  "keywords": ["numbered", "sections"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "numbered_sections.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

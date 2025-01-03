@@ -1,0 +1,16 @@
+{
+  "name": "acf/singleteammember",
+  "title": "Single Team Member",
+  "description": "Team member text and image",
+  "style": ["file:./single_team_member.css"],
+  "category": "team member",
+  "icon": "admin-comments",
+  "keywords": ["single", "team", "member"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single_team_member.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}
